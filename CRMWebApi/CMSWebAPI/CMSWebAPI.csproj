@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyName>CMSWebAPI</AssemblyName>
+    <RootNamespace>CMSWebAPI</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Quartz" Version="3.0.7" />
+    <PackageReference Include="RestSharp" Version="106.6.10" />
+    <PackageReference Include="Sendgrid" Version="9.12.0" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="1.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="wwwroot\images\CarImages\" />
+    <Folder Include="wwwroot\images\CarInsuranceImage\" />
+    <Folder Include="wwwroot\images\CarRCImages\" />
+    <Folder Include="wwwroot\images\CarPollutionImage\" />
+    <Folder Include="wwwroot\images\ParkingDocumentImage\" />
+    <Folder Include="wwwroot\images\servicetypeicon\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\images\ContentImages\About.jpg" />
+    <None Include="wwwroot\images\ContentImages\car.jpg" />
+    <None Include="wwwroot\images\ContentImages\Home.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CMSWebAPI.DAL\CMSWebAPI.DAL.csproj" />
+    <ProjectReference Include="..\CMSWebAPI.Models\CMSWebAPI.Models.csproj" />
+  </ItemGroup>
+
+</Project>
